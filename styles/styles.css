@@ -1,0 +1,266 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 3.2rem;
+  color: #009B9B;
+  padding-bottom: 40px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5rem;
+  padding-top: 15px;
+  font-weight: bold;
+}
+
+h3 {
+  padding-top: 9px;
+  font-size: 1.2rem;
+  color: #5500C1;
+  font-weight: bold;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px;
+  background-color: #5500C1;
+  font-size: 2.1rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+main {
+  margin: auto;
+  max-width: 900px;
+  min-height: 750px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px;
+  background-color: #5500C1;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+li {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .li-active {
+  background-color: #009B9B;
+}
+
+.agregar-contacto {
+  width: 900px;
+  margin: 10% 0;
+}
+
+.agregar-contacto input {
+  padding: 15px 10px;
+  border: 1px solid #cccccc;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.agregar-contacto input:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 15px #cccccc;
+          box-shadow: 0 0 15px #cccccc;
+}
+
+.agregar-contacto h1 {
+  margin-bottom: 15px;
+}
+
+.form-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.agregar-contacto button {
+  display: block;
+  margin: 35px auto;
+  padding: 15px 80px;
+  border-style: none;
+  color: #fff;
+  background-color: #5500C1;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.agregar-contacto button:hover {
+  -webkit-box-shadow: 0 0 10px #5500C1;
+          box-shadow: 0 0 10px #5500C1;
+}
+
+.ver-contactos {
+  width: 900px;
+  margin: 10% auto;
+}
+
+.contactos-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 45px;
+}
+
+.card {
+  position: relative;
+  border: 1px solid #000;
+  padding: 20px 35px;
+  text-align: center;
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 0 15px #868181;
+          box-shadow: 0 0 15px #868181;
+}
+
+.card p {
+  font-size: 1.4rem;
+  padding-top: 15px;
+}
+
+.btn-close {
+  position: absolute;
+  right: -9px;
+  top: -9px;
+  margin: 0px;
+  padding: 6px 7px;
+  font-size: 1.0rem;
+  color: #fff;
+  background-color: red;
+  border-radius: 50%;
+  font-weight: bold;
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.btn-close:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 10px red;
+          box-shadow: 0 0 10px red;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.fa {
+  padding-right: 5px;
+  font-size: 1.2rem;
+  color: #009B9B;
+}
+/*# sourceMappingURL=styles.css.map */

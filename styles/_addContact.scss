@@ -1,0 +1,39 @@
+.agregar-contacto{
+    width: 900px;
+    margin: 10% 0;
+}
+
+.agregar-contacto input{
+    padding: 15px 10px;
+    border: 1px solid #cccccc;
+    transition: all 0.5s;
+    &:focus{
+        outline: none;        
+        box-shadow: 0 0 15px #cccccc;
+    }
+}
+
+
+.agregar-contacto h1{
+    margin-bottom: 15px;
+}
+
+.form-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.agregar-contacto button{
+    display: block;
+    margin: 35px auto;
+    padding: 15px 80px;
+    border-style: none;
+    color: map-get($color-fonts, "white");
+    background-color: map-get($colors, "primary");
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover{
+        box-shadow: 0 0 10px map-get($colors, "primary");
+    }
+}
+
